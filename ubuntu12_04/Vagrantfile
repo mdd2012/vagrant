@@ -22,8 +22,10 @@ Vagrant.configure(2) do |config|
      cd provision
      cp /vagrant/localhost .
      cp /vagrant/site.yml .
+     cp /vagrant/provision.sh .
      chown vagrant.vagrant localhost
      chown vagrant.vagrant site.yml
+     chown vagrant.vagrant provision.sh
      chmod -x localhost
      chmod -x site.yml
    SHELL

@@ -29,7 +29,7 @@ $ vagrant up
 $ vagrant ssh
 
 vagrant@vagrant-ubuntu-precise-64:~$ cd provision
-vagrant@vagrant-ubuntu-precise-64:~$ ansible-playbook site.yml -i localhost
+vagrant@vagrant-ubuntu-precise-64:~$ ./provision.sh
 vagrant@vagrant-ubuntu-precise-64:~$ exit
 ```
 ### 仮想マシンのリロード  
