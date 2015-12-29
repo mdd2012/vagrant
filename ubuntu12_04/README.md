@@ -33,6 +33,7 @@ vagrant@vagrant-ubuntu-precise-64:~$ exit
 $ vagrant reload
 ```
 これで、VirtualBOXの画面側にUbuntuLinuxのデスクトップが表示されるはず。
+![画面イメージ](img/ubuntu_desktop.PNG "イメージ")
 
 ## 参考URL
 - [Qiita:VagrantでGUIを有効にする - Qiita](http://qiita.com/WizowozY/items/3f3e5d4065c548db3e54)
