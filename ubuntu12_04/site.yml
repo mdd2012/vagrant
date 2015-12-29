@@ -1,26 +1,22 @@
 ---
 - hosts: 127.0.0.1
   user: vagrant
+  sudo: yes
   tasks:
     - name: "apt-get install xfce4"
-      apt: pkg=xfce4
-      sudo: yes
+      apt: name=xfce4
     - name: "add-apt-repository ppa:gnome3-team/gnome3"
       apt_repository: repo='ppa:gnome3-team/gnome3'
-      sudo: yes
     - name: "apt-get install gnome-shell"
-      apt: pkg=gnome-shell
-      sudo: yes
+      apt: name=gnome-shell
     - name: "apt-get install ubuntu-desktop"
-      apt: pkg=ubuntu-desktop
-      sudo: yes
+      apt: name=ubuntu-desktop
     - name: "apt-get install gdm"
-      apt: pkg=gdm
-      sudo: yes
+      apt: name=gdm
     - name: "apt-get install language-pack-ja-base"
-      apt: pkg=language-pack-ja-base
-      sudo: yes
+      apt: name=language-pack-ja-base
     - name: "apt-get install language-pack-ja"
-      apt: pkg=language-pack-ja
-      sudo: yes
+      apt: name=language-pack-ja
+    - name: "Locale UPDATE"
+      command: update-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
 
