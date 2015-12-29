@@ -9,6 +9,12 @@
 ## 手順
 ### Ubuntu 12.04 LTSのサーバーイメージのBOXを取得する  
   - ubuntu_box_get.bat(Windows)やubuntu_box_get.sh(Linux、Mac)でBOXイメージ取得
+```
+# Windowsの場合
+ubuntu_box_get.bat
+# LinuxやMacの場合
+ubuntu_box_get.sh
+```
   - 取得できたかどうかは、以下のコマンドで確認
 ```
 $ vagrant box list
@@ -16,7 +22,7 @@ ubuntu64 (virtualbox, 0)
 ```
 ### カレントディレクトリにVagrantfile、localhost、site.ymlを置いた状態でvagrant up!!  
 ```
-vagrant up
+$ vagrant up
 ```
 ### 仮想マシンが立ち上がったら、ローカルでsshログインして UbuntuLinux上で ansible-playbookコマンドでプロビジョニング実施  
 ```
