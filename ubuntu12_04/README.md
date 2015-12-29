@@ -26,12 +26,13 @@ $ vagrant ssh
 
 vagrant@vagrant-ubuntu-precise-64:~$ cd provision
 vagrant@vagrant-ubuntu-precise-64:~$ ansible-playbook site.yml -i localhost
+vagrant@vagrant-ubuntu-precise-64:~$ exit
 ```
 4. 仮想マシンのリロード
 ```
 $ vagrant reload
 ```
-
+これで、VirtualBOXの画面側にUbuntuLinuxのデスクトップが表示されるはず。
 
 ## 参考URL
 - [Qiita:VagrantでGUIを有効にする - Qiita](http://qiita.com/WizowozY/items/3f3e5d4065c548db3e54)
