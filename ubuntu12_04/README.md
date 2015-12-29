@@ -1,26 +1,24 @@
-# ubuntu12.04LTS‚ÌBOX‚ğæ“¾‚µ‚ÄAgnomeƒfƒXƒNƒgƒbƒv‚ğã‚°‚é
-## ‘O’ñ
-- ˆÈ‰º‚Ìƒo[ƒWƒ‡ƒ“‚Å‰Ò“­Šm”F‚µ‚Ü‚µ‚½B
+# ubuntu12.04LTSã®BOXã‚’å–å¾—ã—ã¦ã€gnomeãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ã‚’ä¸Šã’ã‚‹
+## å‰æ
+- ä»¥ä¸‹ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ç¨¼åƒç¢ºèªã—ã¾ã—ãŸã€‚
   - Windows
     - Vagrant 1.7.4
     - Oracle VirtualBOX for Win 4.3.12
     - msysGit 2.0.0
 
-## è‡
-1. Ubuntu 12.04 LTS‚ÌƒT[ƒo[ƒCƒ[ƒW‚ÌBOX‚ğæ“¾‚·‚é
-- ubuntu_box_get.bat(Windows)‚âubuntu_box_get.sh(LinuxAMac)‚ÅBOXƒCƒ[ƒWæ“¾
-- æ“¾‚Å‚«‚½‚©‚Ç‚¤‚©‚ÍAˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ÅŠm”F
+## æ‰‹é †
+### Ubuntu 12.04 LTSã®ã‚µãƒ¼ãƒãƒ¼ã‚¤ãƒ¡ãƒ¼ã‚¸ã®BOXã‚’å–å¾—ã™ã‚‹  
+  - ubuntu_box_get.bat(Windows)ã‚„ubuntu_box_get.sh(Linuxã€Mac)ã§BOXã‚¤ãƒ¡ãƒ¼ã‚¸å–å¾—
+  - å–å¾—ã§ããŸã‹ã©ã†ã‹ã¯ã€ä»¥ä¸‹ã®ã‚³ãƒãƒ³ãƒ‰ã§ç¢ºèª
 ```
 $ vagrant box list
 ubuntu64 (virtualbox, 0)
 ```
-	
-2. ƒJƒŒƒ“ƒgƒfƒBƒŒƒNƒgƒŠ‚ÉVagrantfileAlocalhostAsite.yml‚ğ’u‚¢‚½ó‘Ô‚Åvagrant up!!
+### ã‚«ãƒ¬ãƒ³ãƒˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«Vagrantfileã€localhostã€site.ymlã‚’ç½®ã„ãŸçŠ¶æ…‹ã§vagrant up!!  
 ```
 vagrant up
 ```
-
-3. ‰¼‘zƒ}ƒVƒ“‚ª—§‚¿ã‚ª‚Á‚½‚çAƒ[ƒJƒ‹‚ÅsshƒƒOƒCƒ“‚µ‚Ä UbuntuLinuxã‚Å ansible-playbookƒRƒ}ƒ“ƒh‚ÅƒvƒƒrƒWƒ‡ƒjƒ“ƒOÀ{
+### ä»®æƒ³ãƒã‚·ãƒ³ãŒç«‹ã¡ä¸ŠãŒã£ãŸã‚‰ã€ãƒ­ãƒ¼ã‚«ãƒ«ã§sshãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ UbuntuLinuxä¸Šã§ ansible-playbookã‚³ãƒãƒ³ãƒ‰ã§ãƒ—ãƒ­ãƒ“ã‚¸ãƒ§ãƒ‹ãƒ³ã‚°å®Ÿæ–½  
 ```
 $ vagrant ssh
 
@@ -28,13 +26,13 @@ vagrant@vagrant-ubuntu-precise-64:~$ cd provision
 vagrant@vagrant-ubuntu-precise-64:~$ ansible-playbook site.yml -i localhost
 vagrant@vagrant-ubuntu-precise-64:~$ exit
 ```
-4. ‰¼‘zƒ}ƒVƒ“‚ÌƒŠƒ[ƒh
+### ä»®æƒ³ãƒã‚·ãƒ³ã®ãƒªãƒ­ãƒ¼ãƒ‰  
 ```
 $ vagrant reload
 ```
-‚±‚ê‚ÅAVirtualBOX‚Ì‰æ–Ê‘¤‚ÉUbuntuLinux‚ÌƒfƒXƒNƒgƒbƒv‚ª•\¦‚³‚ê‚é‚Í‚¸B
-![‰æ–ÊƒCƒ[ƒW](img/ubuntu_desktop.PNG "ƒCƒ[ƒW")
+ã“ã‚Œã§ã€VirtualBOXã®ç”»é¢å´ã«UbuntuLinuxã®ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã¯ãšã€‚
+![ç”»é¢ã‚¤ãƒ¡ãƒ¼ã‚¸](img/ubuntu_desktop.PNG "ã‚¤ãƒ¡ãƒ¼ã‚¸")
 
-## QlURL
-- [Qiita:Vagrant‚ÅGUI‚ğ—LŒø‚É‚·‚é - Qiita](http://qiita.com/WizowozY/items/3f3e5d4065c548db3e54)
-- [Qiita:Ansible‚ğUbuntu‚Ìƒ[ƒJƒ‹‚Åg‚¤](http://qiita.com/itiut@github/items/e8b95ac9b9ea2a6ea701)
+## å‚è€ƒURL
+- [Qiita:Vagrantã§GUIã‚’æœ‰åŠ¹ã«ã™ã‚‹ - Qiita](http://qiita.com/WizowozY/items/3f3e5d4065c548db3e54)
+- [Qiita:Ansibleã‚’Ubuntuã®ãƒ­ãƒ¼ã‚«ãƒ«ã§ä½¿ã†](http://qiita.com/itiut@github/items/e8b95ac9b9ea2a6ea701)
