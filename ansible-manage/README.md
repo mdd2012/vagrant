@@ -6,6 +6,6 @@
 
 ## 作り方
 1. ubuntu 14.04のboxをもってくる。
-- ubuntu_box_get_14_04.bat(Windows)やubuntu_box_get_14_04.sh(Linux)でBOXを取得
+  - ubuntu_box_get_14_04.bat(Windows)やubuntu_box_get_14_04.sh(Linux)でBOXを取得
 
 2. vagrant upすると、ansibleの最新版を自動インストールしたubuntuが上がる
