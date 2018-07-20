@@ -1,0 +1,7 @@
+---
+- hosts: 127.0.0.1
+  user: vagrant
+  sudo: yes
+  tasks:
+    - include: tasks/ubuntu_desktop.yml
+    - include: tasks/japanese.yml
